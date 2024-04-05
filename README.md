@@ -24,11 +24,47 @@
     define property for movement
         bind left, up, down, and right to if key is pressed functions
 
+    class for score label:
+        center label to the left of screen
+        set size
+        set text to "score"
+        set text color
+    
+    class for timer label
+        center label to right of the screen
+        set size
+        set text to "time"
+        set text color
+
     create class for the Game
         set background image
         set sound effect for collision between protein and skinnyGuy
         define amount of protein at start of game
         refresh sprites
+
+    create class for instructions 
+        create multi label explaining game 
+        " "You're a very skinny guy, down on his luck with getting gains.",
+            "An angel descendes and commands you to begin the grind",
+            "You are placed into a gym, as protein powder falls from the sky",
+            "Get as much protein as you can before the gym closes"
+        create quit button
+            set text to "Quit(left key)"
+            center to below multi label
+        create play button
+            set text to "Quit(right key)"
+            center to below  multi label
+        score label shows previous score
+        score = 0
+
+        set sprite list.
+
+        def process for buttons
+            if quit button is clicked on or left key is pressed
+                stop state
+            if play button is clicked on or right key is pressed
+                begin play state
+            
 
     define process function for playing sound when sprites collide
         set sound to play during collision
