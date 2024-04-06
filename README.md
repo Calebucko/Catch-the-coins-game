@@ -59,16 +59,28 @@
 
         set sprite list.
 
+          define process function for playing sound when sprites collide
+        set sound to play during collision
+        reset protein sprite and sound effect when collison is over
+
         def process for buttons
             if quit button is clicked on or left key is pressed
                 stop state
             if play button is clicked on or right key is pressed
                 begin play state
+            if left key button is typed
+                stop state
+            if right key button is typed 
+                play state
             
 
-    define process function for playing sound when sprites collide
-        set sound to play during collision
-        reset protein sprite and sound effect when collison is over
+  
     call main
+    create while loop for states
+    instructions state start 
+    if instructions state button choice is "play
+        start game
+    otherwise:
+        stop state
 
 
