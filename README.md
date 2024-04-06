@@ -75,12 +75,14 @@
             
 
   
-    call main
-    create while loop for states
-    instructions state start 
-    if instructions state button choice is "play
-        start game
-    otherwise:
-        stop state
+    def main
+        create while loop for states
+        instructions state start 
+        if instructions state button choice is "play
+            start game
+        else
+            stop state
+
+    
 
 
